@@ -1,0 +1,61 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "base";
+@import "parallax";
+@import "nav";
+@import "header";
+
+@import "typography";
+
+@import "components/video";
+
+a,
+a:hover,
+a:link {
+  text-decoration: none;
+  outline: none;
+}
+
+/* debug */
+section {
+  min-height: 500px;
+  grid-column: center-start / center-end;
+  // background-color: grey;
+}
+
+.general-info {
+  // background-color: blueviolet;
+}
+
+.projects {
+  display: grid;
+  grid-gap: 2rem;
+  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+  align-items: stretch;
+}
+
+.project {
+  // background-color: whitesmoke;
+  opacity: 0.8;
+  border-radius: 5px;
+  box-shadow: 0 2rem 5rem rgba(#000, .1);
+}
+
+.courses {
+  // background-color: chartreuse;
+}
+
+.hobbies {
+  // background-color: coral;
+}
+
+.cv {
+  // background-color: darkmagenta; 
+}
+
+.footer {
+  grid-column: full-start / full-end;
+  background-color: black;
+}

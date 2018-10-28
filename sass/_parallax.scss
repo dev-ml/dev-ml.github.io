@@ -1,0 +1,58 @@
+.parallax {
+  height: 15rem;
+  grid-column: full-start / full-end;
+
+  background-size: cover;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: grayscale(100%);
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 2rem
+}
+
+.parallax-1 {
+  background-image: url(/assets/bg-1.jpg);
+}
+.parallax-2 {
+  background-image: url(/assets/bg-2.jpg);
+}
+.parallax-3 {
+  background-image: url(/assets/bg-3.jpg);
+}
+.parallax-5 {
+  background-image: url(/assets/bg-5.jpg);
+}
+.parallax-6 {
+  background-image: url(/assets/bg-6.jpg);
+}
+.parallax-7 {
+  background-image: url(/assets/bg-7.jpg);
+}
+.parallax-8 {
+  background-image: url(/assets/bg-8.jpg);
+}
+.parallax-9 {
+  background-image: url(/assets/bg-9.jpg);
+}
+.parallax-10 {
+  background-image: url(/assets/bg-10.jpg);
+}
+.parallax-11 {
+  background-image: url(/assets/bg-11.jpg);
+}
+.parallax-12 {
+  background-image: url(/assets/bg-12.jpg);
+}
+.parallax-13 {
+  background-image: url(/assets/bg-13.jpg);
+}
+.parallax-14 {
+  background-image: url(/assets/bg-14.jpg);
+}
+.parallax-15 {
+  background-image: url(/assets/bg-15.jpg);
+}
