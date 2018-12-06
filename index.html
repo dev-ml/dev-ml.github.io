@@ -15,7 +15,7 @@
 
 <body class="container">
   <nav class="navigation">
-    <h1 class="heading-1">Maciej Lewiński Portfolio</h1>
+    <h1 class="heading-1"><a href="#">Maciej Lewiński Portfolio</a></h1>
     <ul>
       <li><a href="#general-info">Info</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -25,7 +25,16 @@
     </ul>
   </nav>
   <header class="header">
-    <h2>Less is More...</h2>
+    <h2 class="heading-2">(less, more) => less > more;<br> function lessIsMore(less, more) {<br>&nbsp; &nbsp; return less > more;<br>}</h2>
+    <div class="header__placeholder">
+      <div class="header__placeholder--photo"></div>
+      <div class="header__placeholder--links">
+        <ul>
+          <li><a href="https://github.com/dev-ml"><svg><use xlink:href="assets/sprite.svg#icon-github"></use></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/maciej-lewinski-2a959630/"><svg><use xlink:href="assets/sprite.svg#icon-linkedin"></use></svg></a></li>
+        </ul>
+      </div>
+    </div>
     <div class="video">
       <video class="video__content" autoplay muted loop>
         <source src="assets/video.mp4" type="video/mp4">
@@ -34,7 +43,7 @@
       </video>
     </div>
   </header>
-  <section class="intro">Intro</section>
+  <!-- <section class="intro">Intro</section> -->
   <div id="general-info" class="parallax parallax-14"><h3>General Info</h3></div>
   <section class="general-info">General Info</section>
   <div id="projects" class="parallax parallax-11"><h3>Projects</h3></div>

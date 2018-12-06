@@ -57,5 +57,7 @@ section {
 
 .footer {
   grid-column: full-start / full-end;
-  background-color: $color-secondary;
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 0.5rem 2rem;
 }

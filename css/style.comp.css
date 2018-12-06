@@ -127,53 +127,8 @@ li {
   grid-column: full-start / full-end;
   background-image: url(/assets/bg-header.jpg);
   background-size: cover;
-  z-index: 0;
+  z-index: -2;
   height: 100vh; }
-
-.header__placeholder {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10; }
-  .header__placeholder--photo {
-    margin: 0 auto;
-    background-image: url(/assets/ml.png);
-    background-size: cover;
-    width: 25vw;
-    height: 25vw;
-    min-width: 15rem;
-    min-height: 15rem;
-    max-width: 22rem;
-    max-height: 22rem;
-    border-radius: 50%;
-    border: 4px solid #ffffff; }
-  .header__placeholder--links {
-    margin-top: 2rem;
-    transition: all 1s; }
-    .header__placeholder--links ul {
-      display: flex;
-      justify-content: space-evenly; }
-    .header__placeholder--links svg {
-      transition: all 0.2s;
-      width: 4rem;
-      height: 4rem;
-      fill: #ffffff; }
-      .header__placeholder--links svg:hover {
-        transform: scale(1.2);
-        fill: red; }
-
-h2 {
-  color: #ffffff;
-  font-size: 2rem; }
-
-.heading-2 {
-  position: absolute;
-  min-width: 32rem;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10; }
 
 h3 {
   color: #ffffff;

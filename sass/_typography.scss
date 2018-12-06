@@ -1,9 +1,18 @@
+h2 {
+  color: $color-white;
+  font-size: 2rem;
+}
+
+.heading-2 {
+  position: absolute;
+  min-width: 32rem;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
 h3 {
   color: $color-white;
   font-size: 3rem;
-  text-shadow:
-  -1px -1px 0 #000,  
-   1px -1px 0 #000,
-   -1px 1px 0 #000,
-    1px 1px 0 #000;
 }

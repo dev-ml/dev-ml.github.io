@@ -2,6 +2,52 @@
   grid-column: full-start / full-end;
   background-image: url(/assets/bg-header.jpg);
   background-size: cover;
-  z-index: -2;
+  z-index: 0;
   height: 100vh;
+}
+
+.header__placeholder {
+  @include absCenter();
+  z-index: 10;
+
+  &--photo {
+    margin: 0 auto;
+    background-image: url(/assets/ml.png);
+    background-size: cover;
+    width: 25vw;
+    height: 25vw;
+    min-width: 15rem;
+    min-height: 15rem;
+    max-width: 22rem;
+    max-height: 22rem;
+    
+    border-radius: 50%;
+    border: 4px solid $color-white;
+
+  }
+  
+  &--links {
+    margin-top: 2rem;
+    transition: all 1s;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    svg {
+      transition: all 0.2s;
+      width: 4rem;
+      height: 4rem;
+      fill: $color-white;
+
+      &:hover {
+        transform: scale(1.2);
+        fill: red;
+      }
+    }
+
+    li {
+    }
+  }
 }
