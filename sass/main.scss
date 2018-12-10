@@ -10,6 +10,7 @@
 @import "components/video";
 
 @import "courses";
+@import "projects";
 
 a,
 a:hover,
@@ -20,33 +21,32 @@ a:link {
 
 /* debug */
 section {
-  min-height: 500px;
+  // min-height: 500px;
   grid-column: center-start / center-end;
   // background-color: grey;
 }
 
+.intro {
+  padding: 8rem;
+
+  @include changeAt(tab-port) {
+    padding: 6rem;
+  }
+
+  @include changeAt(phone) {
+    padding: 4rem;
+  }
+  
+  &__paragraph {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+
+
+
 .general-info {
   // background-color: blueviolet;
-}
-
-.projects {
-  display: grid;
-  grid-gap: 2rem;
-  padding: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-
-  align-items: stretch;
-}
-
-.project {
-  // background-color: whitesmoke;
-  opacity: 0.8;
-  border-radius: 5px;
-  box-shadow: 0 2rem 5rem rgba(#000, .1);
-}
-
-.courses {
-  // background-color: chartreuse;
 }
 
 .hobbies {

@@ -1,9 +1,15 @@
-h2 {
-  color: $color-white;
-  font-size: 2rem;
+.heading-1 {
+  margin: 0 1rem;
+  flex: 10;
+  
+  a {
+    color: $color-white;
+  }
 }
 
 .heading-2 {
+  font-size: 2rem;
+  color: $color-white;
   position: absolute;
   min-width: 32rem;
   top: 80%;
@@ -12,7 +18,19 @@ h2 {
   z-index: 10;
 }
 
-h3 {
+.heading-2-intro {
+  font-size: 2.5rem;
+  color: $color-black;
+  text-align: center;
+}
+
+.heading-3 {
   color: $color-black;
   font-size: 3rem;
+}
+
+.heading-3-intro {
+  color: $color-accent;
+  font-size: 3rem;
+  text-align: center;
 }

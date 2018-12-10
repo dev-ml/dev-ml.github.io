@@ -96,36 +96,27 @@ body {
   position: fixed;
   width: 100%;
   z-index: 100;
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid #111111; }
   @media only screen and (max-width: 37.5em) {
     .navigation {
       flex-direction: column;
       align-items: flex-start;
       padding: 1rem; } }
-
-.navigation .heading-1 {
-  margin: 0 1rem;
-  flex: 10; }
-  .navigation .heading-1 a {
+  .navigation ul {
+    display: flex; }
+  .navigation li {
+    display: inline-block;
+    list-style-type: none; }
+  .navigation li a {
+    margin: 0 1rem;
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
     color: #ffffff; }
-
-.navigation li a {
-  margin: 0 1rem;
-  flex: 1;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 700;
-  color: #ffffff; }
-  .navigation li a:hover {
-    transform: scale(2); }
-
-ul {
-  display: flex; }
-
-li {
-  display: inline-block;
-  list-style-type: none; }
+    .navigation li a:hover {
+      transform: scale(2); }
 
 .header {
   grid-column: full-start / full-end;
@@ -166,11 +157,15 @@ li {
         transform: scale(1.2);
         fill: red; }
 
-h2 {
-  color: #ffffff;
-  font-size: 2rem; }
+.heading-1 {
+  margin: 0 1rem;
+  flex: 10; }
+  .heading-1 a {
+    color: #ffffff; }
 
 .heading-2 {
+  font-size: 2rem;
+  color: #ffffff;
   position: absolute;
   min-width: 32rem;
   top: 80%;
@@ -178,9 +173,19 @@ h2 {
   transform: translate(-50%, -50%);
   z-index: 10; }
 
-h3 {
+.heading-2-intro {
+  font-size: 2.5rem;
+  color: #000000;
+  text-align: center; }
+
+.heading-3 {
   color: #000000;
   font-size: 3rem; }
+
+.heading-3-intro {
+  color: #f2511b;
+  font-size: 3rem;
+  text-align: center; }
 
 .video {
   height: 100%;
@@ -193,9 +198,9 @@ h3 {
     object-fit: cover; }
 
 .courses {
-  margin: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  margin: 2rem;
   padding: 2rem;
   grid-gap: 2rem; }
   @media only screen and (max-width: 37.5em) {
@@ -203,7 +208,7 @@ h3 {
       padding: 0; } }
 
 .course {
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   margin-left: 5rem;
@@ -253,6 +258,47 @@ h3 {
   .course__description {
     font-size: 1.4rem; }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin: 2rem;
+  padding: 2rem;
+  grid-gap: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .projects {
+      padding: 0; } }
+
+.project {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  font-size: 1.6rem;
+  background-image: linear-gradient(120deg, #ffffff 0%, #f6f6f6 100%);
+  transition: all .2s; }
+  .project:hover {
+    transform: translate(-0.1rem, -1rem) scale(1.05); }
+  .project__img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover; }
+  .project__title {
+    margin: -1rem 0;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #ffffff;
+    background: #3f3f3f;
+    width: 100%; }
+  .project__content {
+    height: 20rem;
+    padding: 2rem; }
+    .project__content--title {
+      font-size: 2rem; }
+    .project__content--paragraph {
+      font-weight: 700; }
+    .project__content--list {
+      columns: 2;
+      padding: 1rem 2rem; }
+
 a,
 a:hover,
 a:link {
@@ -261,20 +307,19 @@ a:link {
 
 /* debug */
 section {
-  min-height: 500px;
   grid-column: center-start / center-end; }
 
-.projects {
-  display: grid;
-  grid-gap: 2rem;
-  padding: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  align-items: stretch; }
-
-.project {
-  opacity: 0.8;
-  border-radius: 5px;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+.intro {
+  padding: 8rem; }
+  @media only screen and (max-width: 56.25em) {
+    .intro {
+      padding: 6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .intro {
+      padding: 4rem; } }
+  .intro__paragraph {
+    font-size: 1.6rem;
+    text-align: center; }
 
 .footer {
   grid-column: full-start / full-end;

@@ -9,7 +9,7 @@
   width: 100%;
   z-index: 100;
 
-  box-shadow: 0 0 20px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
   border-bottom: 1px solid $color-primary;
 
   @include changeAt(phone) {
@@ -17,35 +17,26 @@
     align-items: flex-start;
     padding: 1rem;
   }
-}
 
-.navigation .heading-1 {
-  margin: 0 1rem;
-  flex: 10;
+  ul {
+    display: flex;
+  }
   
-  a {
+  li {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  li a {
+    margin: 0 1rem;
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
     color: $color-white;
+    
+    &:hover {
+      transform: scale(2);
+    }
   }
-}
-
-.navigation li a {
-  margin: 0 1rem;
-  flex: 1;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 700;
-  color: $color-white;
-  
-  &:hover {
-    transform: scale(2);
-  }
-}
-
-ul {
-  display: flex;
-}
-
-li {
-  display: inline-block;
-  list-style-type: none;
 }

@@ -1,7 +1,7 @@
 .courses {
-  margin: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  margin: 2rem;
   padding: 2rem;
   grid-gap: 2rem;
 
@@ -11,7 +11,7 @@
 }
 
   .course {
-    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    box-shadow: 0 1rem 2rem rgba($color-black, .1);
     background-color: rgba($color-white, .6);
     border-radius: 3px;
     margin-left: 5rem;
