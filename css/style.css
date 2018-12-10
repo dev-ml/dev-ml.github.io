@@ -155,13 +155,13 @@ body {
       fill: #ffffff; }
       .header__placeholder--links svg:hover {
         transform: scale(1.2);
-        fill: red; }
+        fill: #f2511b; }
 
 .heading-1 {
   margin: 0 1rem;
   flex: 10; }
   .heading-1 a {
-    color: #ffffff; }
+    color: #f2511b; }
 
 .heading-2 {
   font-size: 2rem;
@@ -179,7 +179,7 @@ body {
   text-align: center; }
 
 .heading-3 {
-  color: #000000;
+  color: #f2511b;
   font-size: 3rem; }
 
 .heading-3-intro {
