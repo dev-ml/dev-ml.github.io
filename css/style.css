@@ -38,7 +38,11 @@ body {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column-reverse;
-  padding: 2rem 5rem; }
+  padding: 2rem 0rem; }
+  .parallax__box {
+    padding: 0 5rem;
+    background-color: #ffffff;
+    opacity: 0.8; }
 
 .parallax-1 {
   background-image: url(/assets/bg-1.jpg); }
@@ -142,15 +146,14 @@ li {
     background-size: cover;
     width: 25vw;
     height: 25vw;
-    min-width: 15rem;
-    min-height: 15rem;
-    max-width: 22rem;
-    max-height: 22rem;
+    min-width: 20rem;
+    min-height: 20rem;
+    max-width: 25rem;
+    max-height: 25rem;
     border-radius: 50%;
     border: 4px solid #ffffff; }
   .header__placeholder--links {
-    margin-top: 2rem;
-    transition: all 4s; }
+    margin-top: 2rem; }
     .header__placeholder--links ul {
       display: flex;
       justify-content: space-evenly; }
@@ -176,7 +179,7 @@ h2 {
   z-index: 10; }
 
 h3 {
-  color: #ffffff;
+  color: #000000;
   font-size: 3rem; }
 
 .video {
@@ -188,6 +191,64 @@ h3 {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+
+.courses {
+  margin: 2rem;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 2rem; }
+
+.course {
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  margin-left: 5rem;
+  font-size: 1.6rem; }
+  .course__img--caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+    .course__img--caption a:link, .course__img--caption a:visited {
+      color: #ffffff; }
+  .course:hover .course__img--caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .course:hover .course__img {
+    transform: scale(2);
+    filter: blur(3px) brightness(80%); }
+  .course__shape {
+    width: 10rem;
+    height: 10rem;
+    float: left;
+    margin-left: -5rem;
+    border: 6px solid white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%; }
+  .course__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    backface-visibility: hidden;
+    transition: all .5s; }
+  .course__text {
+    padding: 1rem;
+    overflow: hidden; }
+  .course__title {
+    font-size: 1.6rem;
+    font-weight: 700; }
+  .course__description {
+    font-size: 1.4rem; }
 
 a,
 a:hover,

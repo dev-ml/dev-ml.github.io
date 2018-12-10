@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <link href="https://fonts.googleapis.com/css?family=Prompt+Sans:300,400,700|Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -30,8 +38,12 @@
       <div class="header__placeholder--photo"></div>
       <div class="header__placeholder--links">
         <ul>
-          <li><a href="https://github.com/dev-ml"><svg><use xlink:href="assets/sprite.svg#icon-github"></use></svg></a></li>
-          <li><a href="https://www.linkedin.com/in/maciej-lewinski-2a959630/"><svg><use xlink:href="assets/sprite.svg#icon-linkedin"></use></svg></a></li>
+          <li><a href="https://github.com/dev-ml"><svg>
+                <use xlink:href="assets/sprite.svg#icon-github"></use>
+              </svg></a></li>
+          <li><a href="https://www.linkedin.com/in/maciej-lewinski-2a959630/"><svg>
+                <use xlink:href="assets/sprite.svg#icon-linkedin"></use>
+              </svg></a></li>
         </ul>
       </div>
     </div>
@@ -43,21 +55,199 @@
       </video>
     </div>
   </header>
-  <!-- <section class="intro">Intro</section> -->
-  <div id="general-info" class="parallax parallax-14"><h3>General Info</h3></div>
+  <section class="intro">Intro</section>
+  <div id="general-info" class="parallax parallax-14">
+      <div class="parallax__box"><h3>General Info</h3></div>
+  </div>
   <section class="general-info">General Info</section>
-  <div id="projects" class="parallax parallax-11"><h3>Projects</h3></div>
+  <div id="projects" class="parallax parallax-11">
+      <div class="parallax__box"><h3>Projects</h3></div>
+  </div>
   <section class="projects">
     <div class="project">Project 1</div>
     <div class="project">Project 2</div>
     <div class="project">Project 3</div>
   </section>
-  <div id="courses" class="parallax parallax-8"><h3>Courses</h3></div>
-  <section class="courses">Courses</section>
-  <div id="cv" class="parallax parallax-13"><h3>CV</h3></div>
+  <div id="courses" class="parallax parallax-8">
+    <div class="parallax__box"><h3>Courses</h3></div>
+  </div>
+
+  <section class="courses">
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/courses/net.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">Build a full-stack web app with ASP.NET Core, Entity Framework Core and Angular</div>
+        <div class="course__description">Udemy, Mosh Hamedani</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/courses/react.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">React 16 - The Complete Guide</div>
+        <div class="course__description">Udemy, Maximilian Schwarzmüller</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/courses/css.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</div>
+        <div class="course__description">Udemy, Jonas Schmedtmann</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/courses/pwa.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">Progressive Web Apps (PWA) - The Complete Guide</div>
+        <div class="course__description">Udemy, Maximilian Schwarzmüller</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/courses/angular.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">Angular 6 (formerly Angular 2) - The Complete Guide</div>
+        <div class="course__description">Udemy, Maximilian Schwarzmüller</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/courses/ngrx.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">NgRx In Depth (Angular 6 and NgRx 6, with FREE E-Book)</div>
+        <div class="course__description">Udemy, Angular University</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/courses/rxjs.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">Angular RxJs Reactive Programming & FREE Ebook</div>
+        <div class="course__description">Udemy, Angular University</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/courses/scrum.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">Scrum Master Professional Certification</div>
+        <div class="course__description">Udemy, Maged Koshty</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/courses/net_bdd.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">BDD in C# - using Specflow (Cucumber) to develop a REST API and automate software testing</div>
+        <div class="course__description">Udemy, Binary Brain</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/courses/leadership.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">Acumen Presents: Seth Godin's Leadership Workshop</div>
+        <div class="course__description">Udemy, +Acumen Courses</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/bg-2.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">Machine Learning</div>
+        <div class="course__description">Coursera, Andrew Ng, Stanford University</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/bg-2.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">Visual Studio Code</div>
+        <div class="course__description">Pluralsight, John Papa</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/bg-2.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">JavaScript Build Automation With Gulp.js</div>
+        <div class="course__description">Pluralsight, John Papa</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/bg-2.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">AngularJS Patterns: Clean Code</div>
+        <div class="course__description">Pluralsight, John Papa</div>
+      </div>
+    </div>
+    <div class="course">
+      <figure class="course__shape">
+        <img src="assets/bg-1.jpg" alt="Course photo" class="course__img">
+        <figcaption class="course__img--caption"><a href="#">Show certificate</a></figcaption>
+      </figure>
+
+      <div class="course__text">
+        <div class="course__title">AngularJS Fundamentals</div>
+        <div class="course__description">Pluralsight, Joe Eames</div>
+      </div>
+    </div>
+  </section>
+  <div id="cv" class="parallax parallax-13">
+      <div class="parallax__box"><h3>CV</h3></div>
+  </div>
   <section class="cv">CV</section>
-  <div id="hobbies" class="parallax parallax-15"><h3>Hobbies</h3></div>
+  <div id="hobbies" class="parallax parallax-15">
+      <div class="parallax__box"><h3>Hobbies</h3></div>
+  </div>
   <section class="hobbies">Hobbies</section>
   <footer class="footer">Footer</footer>
 </body>
+
 </html>
