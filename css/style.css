@@ -195,9 +195,12 @@ h3 {
 .courses {
   margin: 2rem;
   display: grid;
-  padding: 20px;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  padding: 2rem;
   grid-gap: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .courses {
+      padding: 0; } }
 
 .course {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);

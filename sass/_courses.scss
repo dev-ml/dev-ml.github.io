@@ -1,9 +1,13 @@
 .courses {
   margin: 2rem;
   display: grid;
-  padding: 20px;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  padding: 2rem;
   grid-gap: 2rem;
+
+  @include changeAt(phone) {
+    padding: 0;
+  }
 }
 
   .course {
