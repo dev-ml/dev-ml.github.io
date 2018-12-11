@@ -149,7 +149,7 @@ body {
       display: flex;
       justify-content: space-evenly; }
     .header__placeholder--links svg {
-      transition: all 0.2s;
+      transition: transform 0.2s;
       width: 4rem;
       height: 4rem;
       fill: #ffffff; }

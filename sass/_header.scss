@@ -34,11 +34,11 @@
     }
 
     svg {
-      transition: all 0.2s;
+      transition: transform 0.2s;
       width: 4rem;
       height: 4rem;
       fill: $color-white;
-
+      
       &:hover {
         transform: scale(1.2);
         fill: $color-accent;
