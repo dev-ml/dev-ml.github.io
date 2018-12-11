@@ -1,9 +1,11 @@
 .header {
+  position: relative;
   grid-column: full-start / full-end;
   background-image: url(/assets/bg-header.jpg);
   background-size: cover;
   z-index: 0;
   height: 100vh;
+  min-height: 60rem;
 }
 
 .header__placeholder {

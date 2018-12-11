@@ -96,34 +96,35 @@ body {
   position: fixed;
   width: 100%;
   z-index: 100;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid #111111; }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 37.5em) {
     .navigation {
       flex-direction: column;
-      align-items: flex-start;
-      padding: 1rem; } }
-  .navigation ul {
-    display: flex; }
-  .navigation li {
+      align-items: flex-start; } }
+  .navigation__list {
+    list-style: none;
+    line-height: 4rem; }
+  .navigation__item {
+    display: inline-block; }
+  .navigation__link:link, .navigation__link:visited {
+    transition: all 0.3s;
     display: inline-block;
-    list-style-type: none; }
-  .navigation li a {
-    margin: 0 1rem;
-    flex: 1;
-    text-align: center;
+    padding: 0 1rem;
     font-size: 12px;
     font-weight: 700;
     color: #ffffff; }
-    .navigation li a:hover {
-      transform: scale(2); }
+  .navigation__link:hover, .navigation__link:active {
+    background-color: #f2511b;
+    transform: scale(1.2); }
 
 .header {
+  position: relative;
   grid-column: full-start / full-end;
   background-image: url(/assets/bg-header.jpg);
   background-size: cover;
   z-index: 0;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 60rem; }
 
 .header__placeholder {
   position: absolute;
@@ -158,6 +159,7 @@ body {
         fill: #f2511b; }
 
 .heading-1 {
+  line-height: 4rem;
   margin: 0 1rem;
   flex: 10; }
   .heading-1 a {
@@ -166,12 +168,8 @@ body {
 .heading-2 {
   font-size: 2rem;
   color: #ffffff;
-  position: absolute;
   min-width: 32rem;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10; }
+  margin-top: 4rem; }
 
 .heading-2-intro {
   font-size: 2.5rem;
@@ -276,7 +274,7 @@ body {
   background-image: linear-gradient(120deg, #ffffff 0%, #f6f6f6 100%);
   transition: all .2s; }
   .project:hover {
-    transform: translate(-0.1rem, -1rem) scale(1.05); }
+    transform: scale(1.05); }
   .project__img {
     width: 100%;
     height: 20rem;
